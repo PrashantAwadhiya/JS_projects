@@ -1,62 +1,62 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState } from "react";
 
 const App = () => {
   const data = [
     {
-      name: '🍾 Mumbai Indians',
-      logo: 'src/assets/mi.jpg',
-      theme: '#0136FE',
+      name: "🍾 Mumbai Indians",
+      logo: "src/assets/mi.jpg",
+      theme: "#0136FE",
     },
     {
-      name: '🍾 Chennai Super Kings',
-      logo: 'src/assets/csk.jpg',
-      theme: '#FFC704',
+      name: "🍾 Chennai Super Kings",
+      logo: "src/assets/csk.jpg",
+      theme: "#FFC704",
     },
     {
-      name: '🍾 Kolkata Knight Riders',
-      logo: 'src/assets/kkr.jpg',
-      theme: '#3A1879',
+      name: "🍾 Kolkata Knight Riders",
+      logo: "src/assets/kkr.jpg",
+      theme: "#3A1879",
     },
     {
-      name: '🍾 Royal Challengers Bangalore',
-      logo: 'src/assets/rcb.jpg',
-      theme: '#9E0017',
+      name: "🍾 Royal Challengers Bangalore",
+      logo: "src/assets/rcb.jpg",
+      theme: "#9E0017",
     },
     {
-      name: '🍾 Delhi Capitals',
-      logo: 'src/assets/dc.jpg',
-      theme: '#1074FF',
+      name: "🍾 Delhi Capitals",
+      logo: "src/assets/dc.jpg",
+      theme: "#1074FF",
     },
     {
-      name: '🍾 Sunrisers Hyderabad',
-      logo: 'src/assets/srh.jpg',
-      theme: '#FF6D00',
+      name: "🍾 Sunrisers Hyderabad",
+      logo: "src/assets/srh.jpg",
+      theme: "#FF6D00",
     },
     {
-      name: '🍾 Punjab Kings',
-      logo: 'src/assets/pk.jpg',
-      theme: '#FE0024',
+      name: "🍾 Punjab Kings",
+      logo: "src/assets/pk.jpg",
+      theme: "#FE0024",
     },
     {
-      name: '🍾 Rajasthan Royals',
-      logo: 'src/assets/rr.jpg',
-      theme: '#FE5CFF',
+      name: "🍾 Rajasthan Royals",
+      logo: "src/assets/rr.jpg",
+      theme: "#FE5CFF",
     },
     {
-      name: '🍾 Lucknow Super Giants',
-      logo: 'src/assets/lsg.jpg',
-      theme: '#FEB101',
+      name: "🍾 Lucknow Super Giants",
+      logo: "src/assets/lsg.jpg",
+      theme: "#FEB101",
     },
     {
-      name: '🍾 Gujarat Titans',
-      logo: 'src/assets/gt.jpg',
-      theme: '#918785',
+      name: "🍾 Gujarat Titans",
+      logo: "src/assets/gt.jpg",
+      theme: "#918785",
     },
   ];
 
   const [winnerTeam, setWinnerTeam] = useState({
-    logo: 'src/assets/ipl.jpg',
-    theme: '#000000',
+    logo: "src/assets/ipl.jpg",
+    theme: "#000000",
   });
 
   const imgRef = useRef(null);
@@ -69,7 +69,9 @@ const App = () => {
 
   return (
     <div className="h-screen w-full flex flex-col items-center justify-between p-8 bg-gradient-to-b from-gray-100 to-gray-200">
-      <h1 className="text-4xl font-bold text-blue-800 mb-4">IPL WINNER PREDICTOR</h1>
+      <h1 className="text-4xl font-bold text-blue-800 mb-4">
+        IPL WINNER PREDICTOR
+      </h1>
       <div
         className="h-[65%] w-[22%] rounded-2xl overflow-hidden transition-all duration-300"
         style={{
@@ -89,7 +91,7 @@ const App = () => {
           color: winnerTeam.theme,
         }}
       >
-        {winnerTeam.name || ''}
+        {winnerTeam.name || ""}
       </span>
       <button
         onClick={change}
